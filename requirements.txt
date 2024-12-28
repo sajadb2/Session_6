@@ -4,4 +4,5 @@ torch
 torchvision
 matplotlib
 jupyter
-ipykernel 
+ipykernel
+tqdm
