@@ -7,7 +7,6 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from model import Net
-from utils import train, test
 
 class TestModel(unittest.TestCase):
     def setUp(self):

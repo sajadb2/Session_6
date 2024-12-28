@@ -26,7 +26,7 @@ def train(model, device, train_loader, optimizer, criterion):
 
     return train_loss/len(train_loader), 100*correct/processed
 
-def test(model, device, test_loader, criterion):
+def evaluate_model(model, device, test_loader, criterion):
     model.eval()
     test_loss = 0
     correct = 0
