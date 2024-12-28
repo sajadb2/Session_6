@@ -1,3 +1,8 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/sajadb2/Assignments_EV_)
+![GitHub contributors](https://img.shields.io/github/contributors/sajadb2/Assignments_EV_)
+![GitHub stars](https://img.shields.io/github/stars/sajadb2/Assignments_EV_?style=social)
+![GitHub forks](https://img.shields.io/github/forks/sajadb2/Assignments_EV_?style=social)
+
 # MNIST Digit Classification with PyTorch
 
 This repository contains a PyTorch implementation of a Convolutional Neural Network (CNN) for classifying handwritten digits from the MNIST dataset.
