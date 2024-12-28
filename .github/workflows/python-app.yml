@@ -1,31 +1,25 @@
-name: Python application
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+name: Jupyter Notebook
+on: [push]
 
 jobs:
-  build:
-
+  notebook:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install torch torchvision torchsummary
-        pip install nbconvert
-
-    - name: Execute Jupyter Notebook
-      run: |
-        jupyter nbconvert --to notebook --execute EVA4_Session_6.ipynb --output executed_notebook.ipynb
+      - uses: actions/checkout@v2
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install jupyter
+          pip install ipykernel
+          python -m ipykernel install --user --name python3 --display-name "Python 3"
+          pip install -r requirements.txt
+          
+      - name: Execute notebook
+        run: |
+          jupyter nbconvert --to notebook --execute *.ipynb 
