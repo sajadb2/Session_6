@@ -6,7 +6,8 @@ import os
 # Add the parent directory to the path so we can import the model
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from model import Net  # assuming your model class is named Net
+from model import Net
+from utils import train, test
 
 class TestModel(unittest.TestCase):
     def setUp(self):
