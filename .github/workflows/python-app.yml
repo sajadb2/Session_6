@@ -28,4 +28,4 @@ jobs:
 
     - name: Execute Jupyter Notebook
       run: |
-        jupyter nbconvert --to notebook --execute EVA4_Session_6.ipynb --output executed_notebook.ipynb 
+        jupyter nbconvert --to notebook --execute EVA4_Session_6.ipynb --output executed_notebook.ipynb

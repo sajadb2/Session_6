@@ -48,4 +48,4 @@ The model achieves:
 - Training accuracy: ~99%
 - Test accuracy: ~98%
 
-## Repository Structure 
+## Repository Structure
